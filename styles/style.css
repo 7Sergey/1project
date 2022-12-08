@@ -7,19 +7,89 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  /* outline: 1px solid rgb(243, 2, 2); */
+  /* обнуление падингов */
+  padding: 0;
+  position: relative;
 }
+.up-position{
+  z-index: 2;
+}
+.logo {
+  /* outline: 1px solid rgb(13, 244, 105); */
+  background-image: url(../images/logo_place_header.svg);
+  width: 228px;
+  height: 32px;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column  ;
+  justify-content: center;
+  outline: 1px solid rgb(2, 78, 243);
+  background-color:  #f2f2f2;
+}
+
+.header__title {
+  margin-left: 64px;
+  max-width: 730px;
+  line-height: 96px;
+  font-size: 108px;
+  font-weight: 600;
+
+}
+
+.header__subtitle {
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  max-width: 338px;
+  margin: 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__link::after {
+  content: " \2192"
+}
+
+.header__main-illustration {
+  position: absolute;
+  background-image: url(../images/header-image.png);
+  background-size: cover;
+  width: 765px;
+  height: 608px;
+  right:0;
+  bottom: 0;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
   height: 568px;
   width: 568px;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
 }
 
 /* и элемента с модификатором вида ключ-значение */
