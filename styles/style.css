@@ -45,7 +45,7 @@
   max-height: 756px;
   /* выше установили ограничения для секции */
   display: flex;
-  flex-direction: column  ;
+  flex-direction: column;
   justify-content: center;
   /* outline: 1px solid rgb(2, 78, 243); */
   background-color:  #f2f2f2;
@@ -77,7 +77,7 @@
 }
 
 .header__link::after {
-  content: " \2192"
+  content: " \2192";
 }
 
 .header__main-illustration {
@@ -235,7 +235,7 @@ margin: 0;
 }
 
 .feynman__link::after {
-  content: " \2192"
+  content: " \2192";
 }
 
 .feynman__title {
