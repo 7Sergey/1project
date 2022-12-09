@@ -41,6 +41,7 @@
   justify-content: center;
   outline: 1px solid rgb(2, 78, 243);
   background-color:  #f2f2f2;
+  position: relative;
 }
 
 .header__title {
@@ -90,6 +91,46 @@
   top: 64px;
   right: 0;
   background-color: #2f80ed;
+}
+
+.description {
+  padding-top: 100px;
+  outline: 1px solid rgb(6, 72, 214);
+  display: flex;
+}
+
+.two-columns {
+  width: 80%;
+  margin: 0 auto;
+  outline: 1px solid rgb(2, 243, 6);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  outline: 1px solid rgb(2, 243, 243);
+  /* пытаюсь прижать блок к верху */
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  outline: 1px solid rgb(243, 26, 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.two-columns__paragraph {
+  display: block;
+  outline: 1px solid rgb(227, 243, 2);
+  margin: 0;
+  margin-bottom: 30px;
+}
+.two-columns__paragraph:last-child{
+  margin: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
