@@ -18,17 +18,18 @@
   padding: 0;
   position: relative;
 }
+
 .up-position{
   z-index: 2;
 }
 .logo {
   /* outline: 1px solid rgb(13, 244, 105); */
-  background-image: url(../images/logo_place_header.svg);
   width: 228px;
   height: 32px;
 }
 
 .logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
   position: absolute;
   top: 30px;
   left: 64px;
@@ -213,24 +214,17 @@
 margin: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 .feynman {
-  outline: 1px solid rgb(231, 10, 220);
+  /* outline: 1px solid rgb(231, 10, 220); */
   display: flex;
   flex-direction: column;
   height: 890px;
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .feynman__link {
-  outline: 1px solid rgb(28, 231, 10);
+  /* outline: 1px solid rgb(28, 231, 10); */
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -248,7 +242,7 @@ margin: 0;
   text-align: center;
   width: 648px;
   margin-top: 100px;
-  outline: 1px solid rgb(14, 10, 231);
+  /* outline: 1px solid rgb(14, 10, 231); */
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
@@ -257,18 +251,152 @@ margin: 0;
 .feynman__subtitle {
   text-align: center;
   margin-top: 70px;
-  outline: 1px solid rgb(231, 17, 10);
+  /* outline: 1px solid rgb(231, 17, 10); */
   line-height: 51px;
   font-size: 36px;
   font-weight: 400;
 }
 
 .feynman__image {
-  outline: 1px solid rgb(0, 0, 0);
+  /* outline: 1px solid rgb(0, 0, 0); */
   position: absolute;
   bottom: 0;
   left: 0;
   width: 867px;
   height: 637px;
+}
+
+.kaufman {
+  padding: 90px 0;
+  /* outline: 1px solid rgb(227, 243, 2); */
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  color: white;
+  z-index: -2;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title_theme_dark {
+  /* outline: 1px solid rgb(47, 231, 10); */
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+.section-subtitle_theme_dark{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  /* outline: 1px solid rgb(47, 231, 10); */
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+.table__heading_theme_dark{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.kaufman__trianlge {
+  /* 877x877px */
+  position: absolute;
+  top: 0;
+  right: -210px;
+  width: 877px;
+  height: 877px;
   z-index: -1;
+}
+
+.footer {
+  /* outline: 1px solid rgb(47, 231, 10); */
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color:white;
+  padding: 60px 0 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__columns {
+  /* outline: 1px solid rgb(231, 17, 10); */
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__column {
+  /* outline: 1px solid rgb(252, 252, 252); */
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+.footer__autor {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__columns-links{
+  margin: 20px 0 16px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__column-link{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  /* outline: 1px solid rgb(252, 252, 252); */
+}
+.footer__social-icon {
+  /* outline: 1px solid rgb(222, 226, 0); */
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.footer__social-icon_YouTube{
+  background-image: url(../images/youtube-icon.svg);
+}
+
+.footer__social-icon_vk{
+  background-image: url(../images/vk_color_white.svg);
+}
+
+.footer__social-icon_tiktok{
+  background-image: url(../images/tiktok-icon.svg);
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
 }
