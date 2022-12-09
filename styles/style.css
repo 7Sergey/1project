@@ -1,3 +1,8 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -8,7 +13,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 
-  /* outline: 1px solid rgb(243, 2, 2); */
+  /* outline: 1px solid rgb(10, 10, 10); */
   /* обнуление падингов */
   padding: 0;
   position: relative;
@@ -29,17 +34,19 @@
   left: 64px;
 }
 
+.centr{
+  margin: 0 auto;
+}
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-  margin: 0 auto;
   display: flex;
   flex-direction: column  ;
   justify-content: center;
-  outline: 1px solid rgb(2, 78, 243);
+  /* outline: 1px solid rgb(2, 78, 243); */
   background-color:  #f2f2f2;
   position: relative;
 }
@@ -61,7 +68,7 @@
   margin: 0;
   line-height: 25px;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .header__link {
@@ -95,29 +102,34 @@
 
 .description {
   padding-top: 100px;
-  outline: 1px solid rgb(6, 72, 214);
+  /* outline: 1px solid rgb(230, 23, 212); */
   display: flex;
 }
 
 .two-columns {
   width: 80%;
-  margin: 0 auto;
-  outline: 1px solid rgb(2, 243, 6);
+  /* outline: 1px solid rgb(2, 243, 6); */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .two-columns__brief {
   width: 175px;
-  outline: 1px solid rgb(2, 243, 243);
-  /* пытаюсь прижать блок к верху */
+  /* outline: 1px solid rgb(2, 243, 243); */
+  margin: 0;
+  align-self: stretch;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2f80ed;
 }
 
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  outline: 1px solid rgb(243, 26, 2);
+  /* outline: 1px solid rgb(243, 26, 2); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -125,12 +137,80 @@
 
 .two-columns__paragraph {
   display: block;
-  outline: 1px solid rgb(227, 243, 2);
+  /* outline: 1px solid rgb(227, 243, 2); */
   margin: 0;
   margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
 }
 .two-columns__paragraph:last-child{
   margin: 0;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.digits {
+  padding: 100px 0;
+  /* outline: 1px solid rgb(227, 243, 2); */
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  /* outline: 1px solid rgb(243, 50, 2); */
+  width: 60%;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  /* outline: 1px solid rgb(104, 110, 12); */
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.table {
+  /* outline: 1px solid rgb(55, 223, 13); */
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__cell {
+  /* outline: 1px solid rgb(231, 10, 220); */
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.table__text {
+  margin: 20px 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.table__blockquote {
+margin: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -139,4 +219,56 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.feynman {
+  outline: 1px solid rgb(231, 10, 220);
+  display: flex;
+  flex-direction: column;
+  height: 890px;
+  position: relative;
+}
+
+.feynman__link {
+  outline: 1px solid rgb(28, 231, 10);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.feynman__link::after {
+  content: " \2192"
+}
+
+.feynman__title {
+  text-align: center;
+  width: 648px;
+  margin-top: 100px;
+  outline: 1px solid rgb(14, 10, 231);
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.feynman__subtitle {
+  text-align: center;
+  margin-top: 70px;
+  outline: 1px solid rgb(231, 17, 10);
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.feynman__image {
+  outline: 1px solid rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 867px;
+  height: 637px;
+  z-index: -1;
 }
