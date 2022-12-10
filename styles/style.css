@@ -55,7 +55,7 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
-  width: 338px;
+  width: 388px;
   margin: 0;
   line-height: 25px;
   font-size: 18px;
@@ -150,11 +150,10 @@
 .section-title {
   width: 60%;
   text-align: center;
-  margin-bottom: 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 .section-subtitle {
