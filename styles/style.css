@@ -27,10 +27,6 @@
   left: 64px;
 }
 
-.centr{
-  margin: 0 auto;
-}
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -41,6 +37,7 @@
   justify-content: center;
   background-color:  #f2f2f2;
   position: relative;
+  overflow: hidden;
 }
 
 .header__title {
@@ -218,6 +215,7 @@
   font-size: 36px;
   font-weight: 400;
   z-index: 2;
+  color: #2f80ed;
 }
 
 .feynman__link::after {
