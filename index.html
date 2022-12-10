@@ -9,18 +9,18 @@
 </head>
 <body class="body">
   <div class="page">
+    <header class="header">
+      <div class="logo logo_place_header"></div>
+      <h1 class="header__title">Научиться учиться</h1>
+      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
+        <a href="#" class="header__link">Узнать</a>
+      </p>
+      <img class="header__main-illustration" src="./images/header-image.png" alt="Опять двойка">
+      <div class="header__square-pic"></div>
+    </header>
     <main class="content">
-      <header class="header">
-        <div class="logo logo_place_header up-position"></div>
-        <h1 class="header__title up-position">Научиться учиться</h1>
-        <p class="header__subtitle up-position">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
-          <a href="#" class="header__link">Узнать</a>
-        </p>
-        <div class="header__main-illustration"></div>
-        <div class="header__square-pic"></div>
-      </header>
       <section class="description">
-        <div class="two-columns centr">
+        <article class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">
@@ -40,12 +40,12 @@
                 Эти же техники применяются на примере обучения в Практикуме.
             </p>
           </div>
-        </div>
+        </article>
       </section>
       <section class="digits">
-        <h2 class="section-title centr">Цифры и факты</h2>
-        <p class="section-subtitle centr">Про учёбу и мозг</p>
-        <div class="table centr">
+        <h2 class="section-title">Цифры и факты</h2>
+        <p class="section-subtitle">Про учёбу и мозг</p>
+        <div class="table">
           <div class="table__cell">
             <h3 class="table__heading">86 миллиардов</h3>
             <p class="table__text">Число нейронов в мозге человека</p>
@@ -53,7 +53,7 @@
           <div class="table__cell">
             <h3 class="table__heading">2.1 миллиарда</h3>
             <p class="table__text">Число нуждающихся в повышении квалификации</p>
-            <blockquote class="table__blockquote">Всемирный Банк, 2017</blockquote>
+            <p class="table__text">Всемирный Банк, 2017</p>
           </div>
           <div class="table__cell">
             <h3 class="table__heading">1000 терабайт</h3>
@@ -72,7 +72,7 @@
               Число взрослых людей моложе 25 лет, 
               не имеющих образования для трудоустройства
             </p>
-            <blockquote class="table__blockquote">Всемирный Банк, 2017</blockquote>
+            <p class="table__text">Всемирный Банк, 2017</p>
           </div>
           <div class="table__cell">
             <h3 class="table__heading">17–20 лет</h3>
@@ -89,15 +89,15 @@
         </div>
       </section>
       <section class="feynman">
-        <h2 class="feynman__title centr up-position">Метод Фейнмана</h2>
-        <p class="feynman__subtitle centr up-position">Выучить и не забыть.</p>
-        <a href="#" class="feynman__link up-position">Подробнее</a>
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
+        <a href="#" class="feynman__link">Подробнее</a>
         <img  class="feynman__image" src="./images/feynman.png" alt="Фото Фейнмана">
       </section>
       <section class="kaufman">
-        <h2 class="section-title centr section-title_theme_dark">Принципы обучения</h2>
-        <p class="section-subtitle centr section-subtitle_theme_dark">от Джоша Кауфмана</p>
-        <div class="table centr table_theme_dark">
+        <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
+        <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
+        <div class="table table_theme_dark">
           <div class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">1</h3>
             <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
@@ -139,34 +139,36 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </div>
         </div>
-        <img class="kaufman__trianlge" src="./images/kaufman-triangle.svg" alt="Изображение синего треугольника">
+        <div class="kaufman__trianlge"></div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__columns centr">
+      <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <div class="logo logo_place_footer up-position"></div>
-          <div class="footer__autor">&copy; Федоров Сергей</div>
+          <div class="logo logo_place_footer"></div>
+          <p class="footer__autor">&copy; Федоров Сергей</p>
         </div>
         <div class="footer__column footer__column_content_info">
-          <div class="footer__column-heading">О Практикуме</div>
-          <ul class="footer__columns-links">
-            <li class="footer__column-link">Главная</li>
-            <li class="footer__column-link">Концепция</li>
-            <li class="footer__column-link">Наставники</li>
-          </ul>
+          <h4 class="footer__column-heading">О Практикуме</h4>
+          <nav>
+            <ul class="footer__columns-links">
+              <li><a class="footer__column-link" href="#">Главная</a></li>
+              <li><a class="footer__column-link" href="#">Концепция</a></li>
+              <li><a class="footer__column-link" href="#">Наставники</a></li>
+            </ul>
+          </nav>
         </div>
         <div class="footer__column footer__column_content_social">
-          <div class="footer__column-heading">Соцсети</div>
+          <h4 class="footer__column-heading">Соцсети</h4>
           <div class="footer__columns-links">
             <a href="#" class="footer__column-link">
-              <div class="footer__social-icon footer__social-icon_YouTube"></div>YouTube
+              <div class="footer__social-icon footer__social-icon_type_YouTube"></div>YouTube
             </a>
             <a href="#" class="footer__column-link">
-              <div class="footer__social-icon footer__social-icon_vk"></div>Вконтакте
+              <div class="footer__social-icon footer__social-icon_type_vk"></div>Вконтакте
             </a>
             <a href="#" class="footer__column-link">
-              <div class="footer__social-icon footer__social-icon_tiktok"></div>TikTok
+              <div class="footer__social-icon footer__social-icon_type_tiktok"></div>TikTok
             </a>
           </div>
         </div>

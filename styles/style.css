@@ -1,7 +1,3 @@
-.body {
-  margin: 0;
-  padding: 0;
-}
 
 .page {
   min-width: 1100px;
@@ -13,19 +9,15 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 
-  /* outline: 1px solid rgb(10, 10, 10); */
   /* обнуление падингов */
   padding: 0;
   position: relative;
 }
 
-.up-position{
-  z-index: 2;
-}
 .logo {
-  /* outline: 1px solid rgb(13, 244, 105); */
   width: 228px;
   height: 32px;
+  z-index: 2;
 }
 
 .logo_place_header {
@@ -47,7 +39,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* outline: 1px solid rgb(2, 78, 243); */
   background-color:  #f2f2f2;
   position: relative;
 }
@@ -56,24 +47,28 @@
   margin-left: 64px;
   max-width: 730px;
   line-height: 96px;
-  font-size: 108px;
+  font-size: 102px;
   font-weight: 600;
-
+  z-index: 2;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header__subtitle {
   position: absolute;
   left: 64px;
   bottom: 30px;
-  max-width: 338px;
+  width: 338px;
   margin: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
+  z-index: 2;
 }
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__link::after {
@@ -82,8 +77,6 @@
 
 .header__main-illustration {
   position: absolute;
-  background-image: url(../images/header-image.png);
-  background-size: cover;
   width: 765px;
   height: 608px;
   right:0;
@@ -103,22 +96,20 @@
 
 .description {
   padding-top: 100px;
-  /* outline: 1px solid rgb(230, 23, 212); */
   display: flex;
 }
 
 .two-columns {
   width: 80%;
-  /* outline: 1px solid rgb(2, 243, 6); */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 0 auto;
 }
 
 .two-columns__brief {
   width: 175px;
-  /* outline: 1px solid rgb(2, 243, 243); */
   margin: 0;
   align-self: stretch;
   line-height: 1.2;
@@ -130,7 +121,6 @@
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  /* outline: 1px solid rgb(243, 26, 2); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -138,7 +128,6 @@
 
 .two-columns__paragraph {
   display: block;
-  /* outline: 1px solid rgb(227, 243, 2); */
   margin: 0;
   margin-bottom: 30px;
   line-height: 34px;
@@ -157,41 +146,39 @@
 
 .digits {
   padding: 100px 0;
-  /* outline: 1px solid rgb(227, 243, 2); */
   display: flex;
   flex-direction: column;
 }
 
 .section-title {
-  /* outline: 1px solid rgb(243, 50, 2); */
   width: 60%;
   text-align: center;
   margin-bottom: 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
+  margin: 0 auto;
 }
 
 .section-subtitle {
-  /* outline: 1px solid rgb(104, 110, 12); */
   width: 60%;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
+  margin: 0 auto;
 }
 
 .table {
-  /* outline: 1px solid rgb(55, 223, 13); */
   width: 1100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .table__cell {
-  /* outline: 1px solid rgb(231, 10, 220); */
   width: 250px;
   margin-top: 60px;
 }
@@ -210,21 +197,19 @@
   font-weight: 400;
 }
 
-.table__blockquote {
-margin: 0;
+.table__text:last-child {
+  margin-bottom: 0;
 }
 
 .feynman {
-  /* outline: 1px solid rgb(231, 10, 220); */
   display: flex;
   flex-direction: column;
-  height: 890px;
+  min-height: 890px;
   position: relative;
   background-color: #f2f2f2;
 }
 
 .feynman__link {
-  /* outline: 1px solid rgb(28, 231, 10); */
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -232,6 +217,7 @@ margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: 400;
+  z-index: 2;
 }
 
 .feynman__link::after {
@@ -242,23 +228,24 @@ margin: 0;
   text-align: center;
   width: 648px;
   margin-top: 100px;
-  /* outline: 1px solid rgb(14, 10, 231); */
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
+  z-index: 2;
+  margin: 0 auto;
 }
 
 .feynman__subtitle {
   text-align: center;
   margin-top: 70px;
-  /* outline: 1px solid rgb(231, 17, 10); */
   line-height: 51px;
   font-size: 36px;
   font-weight: 400;
+  z-index: 2;
+  margin: 0 auto;
 }
 
 .feynman__image {
-  /* outline: 1px solid rgb(0, 0, 0); */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -268,78 +255,81 @@ margin: 0;
 
 .kaufman {
   padding: 90px 0;
-  /* outline: 1px solid rgb(227, 243, 2); */
   display: flex;
   flex-direction: column;
   background-color: #1f1f1f;
-  color: white;
-  z-index: -2;
   position: relative;
   overflow: hidden;
 }
 
 .section-title_theme_dark {
-  /* outline: 1px solid rgb(47, 231, 10); */
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
+  color: white;
+  z-index: 1;
 }
 .section-subtitle_theme_dark{
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
-  /* outline: 1px solid rgb(47, 231, 10); */
+  color: white;
+  z-index: 1;
 }
 
 .table__cell_theme_dark {
   width: 200px;
   margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
 }
 
 .table__heading_theme_dark{
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
+  color: white;
 }
 
 .table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
+  color: white;
 }
 
 
 .kaufman__trianlge {
-  /* 877x877px */
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size:contain;
+  /* background-size: 877px 877px; когда применяю это свойство -- изображение пропадает */
+  width: 877px;
+  height: 877px;
   position: absolute;
   top: 0;
   right: -210px;
-  width: 877px;
-  height: 877px;
-  z-index: -1;
 }
 
+
 .footer {
-  /* outline: 1px solid rgb(47, 231, 10); */
   min-height: 350px;
   background-color: #1f1f1f;
   color:white;
   padding: 60px 0 40px;
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
 }
 
 .footer__columns {
-  /* outline: 1px solid rgb(231, 17, 10); */
   width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .footer__column {
-  /* outline: 1px solid rgb(252, 252, 252); */
   display: flex;
   flex-direction: column;
 }
@@ -374,28 +364,30 @@ margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 400;
-  /* outline: 1px solid rgb(252, 252, 252); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .footer__social-icon {
-  /* outline: 1px solid rgb(222, 226, 0); */
   margin-right: 10px;
   width: 16px;
   height: 16px;
 }
 
-.footer__social-icon_YouTube{
+.footer__social-icon_type_YouTube{
   background-image: url(../images/youtube-icon.svg);
 }
 
-.footer__social-icon_vk{
+.footer__social-icon_type_vk{
   background-image: url(../images/vk_color_white.svg);
 }
 
-.footer__social-icon_tiktok{
+.footer__social-icon_type_tiktok{
   background-image: url(../images/tiktok-icon.svg);
 }
 
 .footer__column-heading {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
