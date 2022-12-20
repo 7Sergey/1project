@@ -21,12 +21,12 @@
 @import url(../blocks/feynman/__title/feynman__title.css);
 
 @import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/__autor/footer__autor.css);
+@import url(../blocks/footer/__author/footer__author.css);
 @import url(../blocks/footer/__column-heading/footer__column-heading.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);
 @import url(../blocks/footer/__column/footer__column.css);
 @import url(../blocks/footer/__column/_content/footer__column_content_copyright.css);
-@import url(../blocks/footer/__columns-links/footer__columns-links.css);
+@import url(../blocks/footer/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
 @import url(../blocks/footer/__social-icon/_type/footer__social-icon_type_tiktok.css);
@@ -35,7 +35,7 @@
 
 
 @import url(../blocks/kaufman/kaufman.css);
-@import url(../blocks/kaufman/__trianlge/kaufman__trianlge.css);
+@import url(../blocks/kaufman/__triangle/kaufman__trianlge.css);
 
 
 
@@ -46,7 +46,7 @@
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__cell/table__cell.css);
 @import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);
-@import url(../blocks/table/__heading/table__heading..css);
+@import url(../blocks/table/__heading/table__heading.css);
 @import url(../blocks/table/__heading/_theme/table__heading_theme_dark.css);
 @import url(../blocks/table/__text/table__text.css);
 @import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
@@ -64,7 +64,7 @@
 @import url(../blocks/cards/__title/cards__title.css);
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/__iframes/video__iframes.css);
-@import url(../blocks/video/__inframe/video__iframe.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
 @import url(../blocks/oakley/oakley.css);
 @import url(../blocks/khan/khan.css);
 @import url(../blocks/khan/__author/khan__author.css);
@@ -80,10 +80,7 @@
 @import url(../blocks/resources/__link/resources__link.css);
 @import url(../blocks/resources/__logo-zone/resources__logo-zone.css);
 @import url(../blocks/resources/__logo/resources__logo.css);
-@import url(../blocks/resources/__logo/_type/resources__logo_type_arzama.css);
-@import url(../blocks/resources/__logo/_type/resources__logo_type_n1.css);
-@import url(../blocks/resources/__logo/_type/resources__logo_type_polka.css);
-@import url(../blocks/resources/__logo/_type/resources__logo_type_strelka.css);
+
 
 
 
