@@ -31,11 +31,11 @@
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
 @import url(../blocks/footer/__social-icon/_type/footer__social-icon_type_tiktok.css);
 @import url(../blocks/footer/__social-icon/_type/footer__social-icon_type_vk.css);
-@import url(../blocks/footer/__social-icon/_type/footer__social-icon_type_YouTube.css);
+@import url(../blocks/footer/__social-icon/_type/footer__social-icon_type_youtube.css);
 
 
 @import url(../blocks/kaufman/kaufman.css);
-@import url(../blocks/kaufman/__triangle/kaufman__trianlge.css);
+@import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
 
 
 
